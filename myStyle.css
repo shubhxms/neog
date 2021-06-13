@@ -3,6 +3,7 @@
 :root {
     --primary-color: #f1850b;
     --dark-blue: #3B82F6;
+    --off-white: #F3F4F6;
 }
 
 hr {
@@ -10,6 +11,8 @@ hr {
 }
 
 body {
+    /* background-color: black;
+    color: var(--off-white); */
     font-family: 'Montserrat', 'sans-serif'
 }
 
@@ -83,8 +86,34 @@ body {
     font-size: 2rem;
     color: var(--dark-blue);
     padding-top: 1rem;
+    text-align: center;
 }
 
 .hero .hero--heading .hero--heading--text {
     color: var(--primary-color);
+}
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+}
+
+.ow {
+    background-color: var(--off-white);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+    padding-inline-start: 0px;
+}
+
+.footer .link {
+    color: white;
 }
