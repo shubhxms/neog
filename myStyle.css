@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #f1850b;
+    --dark-blue: #3B82F6;
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+body {
+    font-family: 'Montserrat', 'sans-serif'
+}
+
+/** normal container **/
+.container {
+    padding: 0rem, 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.primary-link {
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+.secondary-link {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+.list--non-bullet {
+    list-style: none;
+}
+
+.list--item-inline {
+    display: inline;
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navigation .nav--link {
+    color: white;
+}
+
+.navigation .nav-pills {
+    /* float: right; */
+    text-align: right;
+}
+
+.hero {
+    padding: 2rem;
+}
+
+.hero .hero--img {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero--heading {
+    font-size: 2rem;
+    color: var(--dark-blue);
+    padding-top: 1rem;
+}
+
+.hero .hero--heading .hero--heading--text {
+    color: var(--primary-color);
+}

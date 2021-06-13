@@ -6,7 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Component Library</title>
-    </head>
+        <link href="myStyle.css" rel="stylesheet"/>
+    </head> 
 
     <body>
         <h1>Shubham's component library</h1>
@@ -20,21 +21,23 @@
         <h1>biggest heading</h1>
         <h2>second biggest</h2>
         <p>normal text</p>
+        <p>this is <strong>bold</strong> text</p>
         <small>smaller text</small>
         <hr>
         <h2>@container</h2>
         <h3>fluid container</h3>
-        <div>this is a fluid container going till end of page</div>
+        <div class="container container-fluid">this is a fluid container going till end of page</div>
         <hr>
         <h3>center container</h3>
-        <div>this is a centered container going till specified length</div>
+        <div class="container container-center">this is a centered container going till specified length</div>
         <hr>
         <h2>@links</h2>
-        <a href="/">primary link</a>
-        <a href="/">secondary link</a>
+        <a class="link primary-link" href="/">primary link</a>
+        <a class="link secondary-link" href="/">secondary link</a>
         <hr>
         <h2>@Lists</h2>
-        <ul>
+        <p>this wont have the bullet</p>
+        <ul class="list--non-bullet">
             <li>this</li>
             <li>is</li>
             <li>a</li>
@@ -43,13 +46,13 @@
 
 
         <h3>inline unordered list</h3>
-        <ul>
-            <li>item one</li>
-            <li>itme two</li>
-            <li>item three</li>
+        <ul class="list--non-bullet">
+            <li class = "list--item-inline">item one</li>
+            <li class = "list--item-inline">itme two</li>
+            <li class = "list--item-inline">item three</li>
         </ul>
         <h3>ordered list</h3>
-        <ol>
+        <ol reversed>
             <li>item one</li>
             <li>item two</li>
             <li>item three</li>
@@ -58,25 +61,25 @@
 
 
         <h2>@nav</h2>
-        <nav>
-            <div>IamBrand</div>
-            <ul>
-                <li>
-                    <a href="/">home</a>
+        <nav class="navigation container">
+            <div class="nav-brand">IamBrand</div>
+            <ul class="list--non-bullet nav-pills">
+                <li class="list--item-inline">
+                    <a class="nav--link" href="/">home</a>
                 </li>
-                <li>
-                    <a href="/">products</a>
+                <li class="list--item-inline" >
+                    <a class="nav--link"href="/">products</a>
                 </li>
-                <li>
-                    <a href="/">about</a>
+                <li class="list--item-inline">
+                    <a class="nav--link"href="/">about</a>
                 </li>
             </ul>
         </nav>
 
         <h2>@header</h2>
-        <header>
-            <img src="hacker_mindset.svg" />
-            <h1>heading inside hero</h1>
+        <header class="hero">
+            <img class="hero--img" src="hacker_mindset.svg" />
+            <h1 class="hero--heading">shubham <span class="hero--heading--text">webdev</span> here</h1>
         </header>
         <!-- hex => #F1850B -->
 
