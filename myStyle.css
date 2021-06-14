@@ -31,6 +31,10 @@ body {
     padding: 0.5rem 1rem;
 }
 
+.link-active {
+    font-weight: bold;
+}
+
 .primary-link {
     color: white;
     background-color: var(--primary-color);
@@ -73,7 +77,7 @@ body {
 }
 
 .hero {
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .hero .hero--img {
@@ -114,6 +118,13 @@ body {
     padding-inline-start: 0px;
 }
 
+.footer .footer--header {
+    font-weight: bold;
+    font-size: large;
+}
+
 .footer .link {
     color: white;
+    border-radius: 0.5rem;
+    border: 1px solid var(--off-white);
 }
